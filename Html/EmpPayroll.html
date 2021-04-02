@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/EmpPayRoll.css">
     <title>Employee payroll form</title>
+    <script defer src="../JS/EmployeePayrollClass.js"></script>
     <script defer src="../JS/EmpPayroll.js"></script>
+
 
 </head>
 
@@ -24,12 +26,13 @@
     </header>
     <div class="form-content">
 
-        <form class="form" action="#" onsubmit="save(event);return false">
+        <form class="form" action="#" onsubmit="">
             <div class="form-head">Employee Payroll form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
                 <error-output class="text-error" for="name"></error-output>
+
             </div>
 
             <div class="row-content">
@@ -97,6 +100,7 @@
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
                 <output class="salary-output text" for="salary">400000</output>
             </div>
+
             <div class="row-content">
                 <label class="label text" for="StartDate">Start Date</label>
                 <select id="day" name="day">
@@ -165,6 +169,7 @@
             <div class="buttonParent">
                 <a href="./EmpPayroll.html" class="resetbutton button cancelButton">Cancel</a>
                 <div class="submit-reset">
+
                     <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="button resetButton" id="resetButton">Reset</button>
                 </div>
@@ -173,6 +178,7 @@
 
         </form>
     </div>
+
 
 </body>
 
